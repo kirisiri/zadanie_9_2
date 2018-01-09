@@ -15,14 +15,15 @@ var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 // Użyj funkcji concat(), aby połączyć ze sobą powyższe dwie tablice i przypisz je do zmiennej allNames.
 var allNames = femaleNames.concat(maleNames);
 // Poniżej zadeklaruj nową zmienną zawierającą napis var newName = 'Marian'
-alert('Nowa tablica:' + allNames);
+alert('Tablica z imionami: ' + allNames);
 
-var newName = 'Arek'
-alert('Chcesz dodac:' + newName + ' sprawdze czy mozna');
+var newName = 'Magda';
+alert('Chcesz dodac imie: ' + newName + ' - sprawdze, czy mozna');
 
 // Stwórz instrukcję warunkową if i sprawdź, czy wartość wyrażenia allNames.indexOf(newName) === -1.
 if ( allNames.indexOf(newName) === -1 ) {
 //Jeśli powyższe wyrażenie jest spełnione, za pomocą funkcji push() dodaj tę zmienną do tablicy allNames.
-	var newAllNames = allNames.push(newName); 
+	allNames.push(newName); 
+	alert('Mozna dodac, gdyz jest to nowe imie. Nowa lista to: ' + allNames);
 }
 else alert('To imie juz jest w tablicy');
